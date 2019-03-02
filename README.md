@@ -1,5 +1,5 @@
 # README
-1. Create a clean ruby on rails application using twitter bootstrap.
+1. Create a clean ruby on rails application using twitter bootstrap.![done](https://img.icons8.com/color/48/000000/checked-2.png)
   * Added Bootstrap, Jquery & FontAwesome gems and updated SCSS, JS files.
   * Added Home Index controller to work out required Bootstrap index page and create basic layout to be used later.
   * Made home index as root page and added required Bootstrap Template.
@@ -7,15 +7,18 @@
   * Initialized DB and Tested the setup
   * Versions followed Bootstrap V4 with Fontawesome V5.
 
-> Done.
 
-2. Create User model with fields first, last, email.
+2. Create User model with fields first, last, email.![done](https://img.icons8.com/color/48/000000/checked-2.png)
   * Created model using generate model command
 
-> Done.
+3. Install and setup devise gem to use the User model for auth (email used as a user name).![done](https://img.icons8.com/color/48/000000/checked-2.png)
+  * Install Devise and updated development.rb
+  * Commented out email filed in devise migration to avoid error
+  * Added required routes to Navbar Template
 
-3. Install and setup devise gem to use the User model for auth (email used as a user name).
-4. Generate devise views via rake command
+4. Generate devise views via rake command![done](https://img.icons8.com/color/48/000000/checked-2.png)
+  * renamed devise view folder to users to avoid any error in future with custom routes incase of custom devise controller
+
 5. On the register new user view add a new text field called Secret Code.
 6. Restrict user registration so a hard coded secret code must be entered, eg. 'foobar'.
 7. Create a new user with seeds called 'admin'
