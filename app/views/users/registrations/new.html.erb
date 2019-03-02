@@ -9,6 +9,16 @@
   </div>
 
   <div class="field">
+    <%= f.label "First Name" %><br />
+    <%= f.text_field :first %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Last Name" %><br />
+    <%= f.text_field :last %>
+  </div>
+
+  <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -20,6 +30,15 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+
+  <hr>
+
+  <div class="field">
+    <%= f.label "Secret Code" %><br />
+    <%= f.text_field :secret_code %>
+  </div>
+
+  <hr>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
