@@ -37,12 +37,18 @@
 
 9. The controller needs to provide a view and actions to generate a number of secret codes.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
 
-10. Index page shows secret codes available, and the associated user email address for ones that have an association.
-11. Index page also has a button to generate more secret code models which by default have no associated user and a randomly generated secret code (some short hash or guid).
-12. The index page also has a drop down filled with 1, 10, 20, 50, 100 which determines how many secret codes to generate (default selection on drop down is 10).
-13. link secret code field on user registration page to only allow available secret code models (one with no current user associated).
-14. registering a user will create association between user and the valid secret code they used.
-15. secret code index page should show user email address for a secret code after they use it for registration in a table next to the code.
+10. Index page shows secret codes available, and the associated user email address for ones that have an association.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+11. Index page also has a button to generate more secret code models which by default have no associated user and a randomly generated secret code (some short hash or guid).![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+12. The index page also has a drop down filled with 1, 10, 20, 50, 100 which determines how many secret codes to generate (default selection on drop down is 10).![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+13. link secret code field on user registration page to only allow available secret code models (one with no current user associated).![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+14. registering a user will create association between user and the valid secret code they used.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+15. secret code index page should show user email address for a secret code after they use it for registration in a table next to the code.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
 16. setup CanCan ACL gem.
 17. create a role called :admin and manually in DB associate it with the admin user created manually earlier (no UI needed for this config).
 18. configure so that SecretCode page link and entire controller is only accessible to :admin role users.

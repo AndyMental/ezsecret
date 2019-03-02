@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>User Email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Secret Code</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.first %></td>
+        <td><%= user.last %></td>
+        <td><%= user.code %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

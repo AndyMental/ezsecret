@@ -3,9 +3,9 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><%= fa_icon('users') %> Users Info</h5>
-        <p class="text-justify">Get to explore the User List and Register new Users with option to Enable Admin Role for Users.<br> Nulla vulputate eros nec mauris blandit convallis. Fusce justo orci, lacinia ut cursus sed, pellentesque scelerisque nibh. Sed scelerisque lectus a lobortis aliquet. Nullam fringilla, tortor nec malesuada mattis, quam purus cursus odio, non auctor est nulla sed lectus. Nunc a fringilla dui. In nec augue eu purus fringilla finibus.</p>
-        <p class="card-text font-weight-bold text-right">Total Users: <%#= @users.size %></p>
-        <%= link_to 'Explore Users', root_path, class: "btn btn-dark" %>
+        <p class="text-justify">Get to explore the User List and Register new Users with option to Enable Admin Role for Users.</p>
+        <p class="card-text font-weight-bold text-right">Total Users: <%= @users.size %></p>
+        <%= link_to 'Explore Users', users_path, class: "btn btn-dark" %>
       </div>
     </div>
   </div>
@@ -13,9 +13,9 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><%= fa_icon('shield-alt') %> Secret Code Info</h5>
-        <p class="text-justify">Check out the list of all the Secret Code Available and Generate new if you have the Authority.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut ultricies quam. Nunc pharetra augue ac metus bibendum, sit amet lobortis massa molestie. Ut non porttitor ante. Suspendisse potenti. Duis suscipit malesuada nisl, sit amet malesuada nunc pellentesque et. Nam sagittis justo dui.</p>
-        <p class="card-text font-weight-bold text-right">Total Codes Generated: <%#= @codes.size %></p>
-        <%= link_to 'List Secret Codes', root_path, class: "btn btn-dark" %>
+        <p class="text-justify">Check out the list of all the Secret Code Available and Generate new if you have the Authority.</p>
+        <p class="card-text font-weight-bold text-right">Total Codes Generated: <%= @secret_codes.size %></p>
+        <%= link_to 'List Secret Codes', secret_codes_path, class: "btn btn-dark" %>
       </div>
     </div>
   </div>
