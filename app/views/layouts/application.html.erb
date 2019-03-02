@@ -1,15 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Ezsecret</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Anand Padia 'Andy' | AndyMental">
+    <meta name="generator" content="Rails">
+    <link rel="canonical" href="<%= "#{request.protocol}#{request.host}#{request.path}" %>">
+    <title>Ezref</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <style>
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        background-color: #fff;
+      }
+      @media (min-width: 768px) {
+        .jumbotron {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+      }
 
+      .jumbotron p:last-child {
+        margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+        font-weight: 300;
+      }
+
+      .jumbotron .container {
+        max-width: 40rem;
+      }
+
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      footer p {
+        margin-bottom: .25rem;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
   <body>
-    <%= yield %>
+    <%= render "shared/navbar" %>
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">EZRef</h1>
+          <p class="lead text-muted">Project to showcase Invite Only User Registration via Secret Code. Prepared by <%= link_to 'Anand Padia "Andy"', "http://www.andymental.com" %></p>
+        </div>
+      </section>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <%= render "shared/flash" %>
+          <%= yield %>
+        </div>
+      </div>
+    </main>
+    <%= render "shared/footer" %>
   </body>
 </html>

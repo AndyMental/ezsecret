@@ -1,5 +1,12 @@
 # README
 1. Create a clean ruby on rails application using twitter bootstrap.
+...Added Bootstrap, Jquery & FontAwesome gems and updated SCSS, JS files.
+...Added Home Index controller to work out required Bootstrap index page and create basic layout to be used later.
+...Made home index as root page and added required Bootstrap Template.
+...Created spaceholders for various pages to be created.
+...Initialized DB and Tested the setup
+...Versions followed Bootstrap V4 with Fontawesome V5.
+> Done.
 2. Create User model with fields first, last, email.
 3. Install and setup devise gem to use the User model for auth (email used as a user name).
 4. Generate devise views via rake command

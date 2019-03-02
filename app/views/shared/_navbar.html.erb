@@ -1,0 +1,40 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <a class="navbar-brand" href="#">EZRef</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to 'Home', root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Secret Codes', root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Users', root_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <%# if user_signed_in? %>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <%= link_to(fa_icon('user-times', text: "Logout"), root_path, method: :delete, class: "nav-link") %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to(fa_icon('users-cog', text: "Edit Account"), root_path, class: "nav-link") %>
+          </li>
+        </ul>
+      <%# else %>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <%= link_to(fa_icon('user-shield', text: "Login"), root_path, class: "nav-link") %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to(fa_icon('user-tag', text: "Register"), root_path, class: "nav-link") %>
+          </li>
+        </ul>
+      <%# end %>
+    </div>
+  </nav>
+</header>
