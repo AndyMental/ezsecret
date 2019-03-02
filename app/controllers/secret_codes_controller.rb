@@ -1,5 +1,5 @@
 class SecretCodesController < ApplicationController
-  before_action :set_test, only: [:show, :edit, :update, :destroy]
+  before_action :check_permissions
 
   def index
     @secret_codes = SecretCode.all
@@ -15,5 +15,9 @@ class SecretCodesController < ApplicationController
 
   def secret_code_params
     params.permit(:count)
+  end
+
+  def check_permissions
+    authorize! :create, resource
   end
 end

@@ -1,4 +1,26 @@
 # README
+
+Ruby Version : 2.5.0 (ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin17])
+Rails Version : 5.2.2
+
+Instruction to execute/run the setup:
+
+```
+rails db:create
+rails db:migrate
+rails db:seed
+rails s
+```
+
+Standard User:
+email: "standard_user@testing.com"
+password: "password123"
+
+Admin User:
+email: "admin@testing.com"
+password: "password"
+
+# Tasks
 1. Create a clean ruby on rails application using twitter bootstrap.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
   * Added Bootstrap, Jquery & FontAwesome gems and updated SCSS, JS files.
   * Added Home Index controller to work out required Bootstrap index page and create basic layout to be used later.
@@ -49,6 +71,8 @@
 
 15. secret code index page should show user email address for a secret code after they use it for registration in a table next to the code.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
 
-16. setup CanCan ACL gem.
-17. create a role called :admin and manually in DB associate it with the admin user created manually earlier (no UI needed for this config).
-18. configure so that SecretCode page link and entire controller is only accessible to :admin role users.
+16. setup CanCan ACL gem.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+17. create a role called :admin and manually in DB associate it with the admin user created manually earlier (no UI needed for this config).![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
+
+18. configure so that SecretCode page link and entire controller is only accessible to :admin role users.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)

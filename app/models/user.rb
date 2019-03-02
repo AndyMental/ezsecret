@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :secret_code
+  has_many :user_role_maps, :class_name => "UserRoleMap", :primary_key => :id, :foreign_key => "user_id"
+  has_many :roles, :through => :user_role_maps
 
   validate :secret_valid
 
@@ -12,7 +14,7 @@ class User < ApplicationRecord
 
   def secret_valid
     @code = self.code
-    
+
     if @code == "" || @code.nil?
       errors.add(:code, ": New user requires Secret Code to register. Please contact Adminstrator.")
     end

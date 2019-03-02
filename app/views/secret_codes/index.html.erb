@@ -11,7 +11,11 @@
     <% @secret_codes.each do |secret_code| %>
       <tr>
         <td><%= secret_code.code %></td>
-        <td><%= User.find(secret_code.user_id).email %></td>
+        <% if secret_code.user_id.nil? %>
+          <td> - </td>
+        <% else %>
+          <td><%= User.find(secret_code.user_id).email %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +32,3 @@
     </div>
   </div>
 <% end %>
-
