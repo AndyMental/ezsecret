@@ -13,12 +13,12 @@ rails s
 ```
 
 Standard User:
-email: "standard_user@testing.com"
-password: "password123"
+* email: standard_user@testing.com
+* password: password123
 
 Admin User:
-email: "admin@testing.com"
-password: "password"
+* email: admin@testing.com
+* password: password
 
 # Tasks
 1. Create a clean ruby on rails application using twitter bootstrap.![done](https://raw.githubusercontent.com/google/material-design-icons/224895a86501195e7a7ff3dde18e39f00b8e3d5a/action/ios/ic_done.imageset/ic_done.png)
